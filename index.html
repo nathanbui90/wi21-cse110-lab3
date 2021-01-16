@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href = "link.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan's User Site</title>
+</head>
+<nav>
+    <a href="#quote">Quote</a>
+    <a href="#skills">Programmin Skills</a>
+    <a href="#internship">NG Internship</a>
+    <a href="aboutme">About Me</a>
+</nav>
+<form>
+    <fieldset>
+        <label for="Searchbar">Search Bar:</label>
+        <input type="search"> 
+        <input type="button" value="Search">
+        <br>
+        <label for="ranges">Brightness Level:</label>
+        <input type="range" id="ranges" name="ranges"><br>
+    </fieldset>
+</form>
+<main>
+    <body>
+        <picture>
+            <img src="Myself.jpg" alt="Myself" style="width:auto;">
+        </picture>
+        <header>
+            <h1><b>Nathan Bui</b><br></h1>        
+            <h2><span style="color:blue">Computer Engineering Major</span> at <b>UCSD</b></h2>
+            <aside>
+                <details>
+                    <summary>UCSD</summary>
+                    <p>
+                        <b>UCSD</b> : a research university located in San Diego, California. <br>
+                    </p>
+                    <iframe src="https://ucsd.edu/" title="UCSD Official Website"></iframe>
+                </details>
+            </aside>
+            <h3><strong>2019 - 2023</strong></h3>
+        </header>
+        <p>Play to hear what I sound like!</p>
+        
+        <audio controls>
+            <source src="Hi-Im-Nathan.m4a" type="audio/mpeg">
+        </audio>
+        
+        <hr>
+        
+        <section id="quote">
+            
+            <h3> Favorite quote: <br></h3>
+
+            <div>
+                <p>"If it wasn't hard, everyone would do it. It's the hard that makes it great." <em><b>- Tom Hanks</b></em> <br></p>
+            </div>
+        
+        </section>
+        
+        <hr>
+        
+        <section id="skills">
+           <h2>
+               Programming Skills
+           </h2>
+           <a href="https://github.com/nathanbui90/UserSiteHTML">Link to UserSiteHTML repo!</a> 
+           <h3>Proficient</h3>
+           <ul>
+                <li>Java</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>Python</li>
+           </ul>
+           <h3>Familiar</h3>
+           <ul>
+               <li>Assembly</li>
+               <li>JavaScript</li>
+               <li>HTML</li>
+           </ul>
+        </section>
+        
+        <hr>
+
+        <section id="internship">
+            <h2><b>Northrop Grumman Internship</b></h2>
+            <table>
+                <caption><b>Experiences</b></caption>
+                <colgroup>
+                    <col span="2" style="background-color:darkgray">
+                </colgroup>
+                <tr>
+                    <th>
+                        Assignment/Project
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                </tr>
+                <tr>
+                    <th>Data Analysis Tool</th>
+                    <td>Created a tool to automate data analysis for employees. The purpose was to reduce labor hours spent on the data analysis. The estimated time save from the tool is 7 hours/week.</td>
+                </tr>
+                <tr>
+                    <th>Laser Profilometry Analysis</th>
+                    <td>Analyzed the surface of warped wafers using a laser profilometer. Made charts and 3-D visuals to represent the data obtained from the scan. The purpose of this was to better understand why the wafers were warping during the process of their creation.</td>
+                </tr>
+            </table>    
+
+        </section>
+        
+        <hr>
+        
+        <section id="aboutme">
+            <h2>About Me</h2>
+            <p>I'm currently a sophmore at UCSD. I'm currently enrolled in CSE 110, CSE 140, CSE 140L, and Math 20D.</p>
+            
+            <h3>Hobbies</h3>
+            <ol>
+                <li>Bouldering</li>
+                <li>Videogames</li>
+                <li>Weightlifting</li>
+            </ol>
+            <figure>
+                <img src="Rock_Climbing.jpg" alt="Rock_Climbing" style="width:auto">
+                <figcaption><i>Myself climbing at Factory Bouldering</i></figcaption>
+            </figure>
+        </section>
+        
+        <hr>
+        
+        <p>Use <code>gdb</code> to debug code.</p>
+        
+        <pre>
+            Some commands you can use along with gdb are 
+            break, run, and quit.
+        </pre>
+        
+        <hr>
+        
+        <video width="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4"> 
+        </video> <br>
+        <canvas id = "myCanvas" width="1050" height="10" style="border:1px solid black"></canvas>
+        <svg width="1100" height="10">
+            <rect width="1050" height="10" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,225)"></rect>
+        </svg>
+
+        <hr>
+        <p>Ask me a question or just send a message!</p>
+        <form>
+            <fieldset>
+                <legend>Message/Question Form</legend>
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname"><br>
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname"><br>
+                <label for="ages">Enter Age:</label>
+                <input type="number" id="ages" name="ages"><br>
+                <label for="dates">Enter Date:</label>
+                <input type="date" id="dates" name="dates"><br>
+                <label for="times">Enter Time:</label>
+                <input type="time" id="times" name="times"><br>
+                <label for="typeof">Choose question or message:</label>
+                <select name="typeof" id="typeof">
+                <optgroup label="Question/Message">
+                    <option value ="Personal">Message</option>
+                    <option value="business">Question</option>
+                </optgroup>
+                </select><br>
+                <label for="Personal/Business">Is your message/question:</label>
+                <input list="Personal/Business" name="Personal/Business1" id="Personal/Business1">
+                <datalist id="Personal/Business">
+                    <option value="Personal">
+                    <option value="Business">
+                </datalist><br>
+                <label for="fname">Email:</label>
+                <input type="email" id="fname" name="fname"><br>
+                <label for="telephone">Enter Telephone Number:</label>
+                <input type="tel" id="telephone" name="telephone"><br>
+                <label for="mname">Message/Question:</label> <br>
+                <textarea id="message-question" name="message-question" rows="4" cols="50">Put your message or question here.
+                </textarea><br>
+                <button type="button">Send</button>
+                <input type="reset">
+            </fieldset>
+        </form>
+        <template>
+            <h2>Secret Message</h2>
+        </template>
+        <footer>
+            <i>Creator: Nathan Bui</i>
+        </footer>
+    </body>
+</main>
+</html>
