@@ -7,4 +7,4 @@ assignees: ''
 
 ---
 
-
+Issue is related to Text
