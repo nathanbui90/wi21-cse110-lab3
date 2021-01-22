@@ -4,18 +4,28 @@
     <link rel="stylesheet" href = "link.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            color:rgb(61, 58, 58);
+            margin: auto;
+            text-align: center;
+            display: block;
+        }
+    </style>
     <title>Nathan's User Site</title>
 </head>
 <body>
     
-    <nav>
-        <a href="#quote">Quote</a>
-        <a href="#skills">Programmin Skills</a>
-        <a href="#internship">NG Internship</a>
-        <a href="aboutme">About Me</a>
-    </nav>
+    <div id="NavBar">
+        <nav class="navBarFlex">
+            <a href="#quote">Quote</a>
+            <a href="#skills">Programming Skills</a>
+            <a href="#internship">NG Internship</a>
+            <a href="aboutme">About Me</a>
+        </nav>
+    </div>
     <main>
-        <form>
+        <form id="searchbar-bright">
             <fieldset>
                 <label for="searchbar">Search Bar:</label>
                 <input type="search" id=searchbar> 
@@ -26,11 +36,11 @@
             </fieldset>
         </form>
         <picture>
-            <img src="Myself.jpg" alt="Myself" width="200" height="300">
+            <img id="myself" src="Myself.jpg" alt="Myself" width="200" height="300">
         </picture>
         <header>
             <h1><b>Nathan Bui</b><br></h1>        
-            <h2><span>Computer Engineering Major</span> at <b>UCSD</b></h2>
+            <h2 id="major"><span>Computer Engineering Major</span> at <b>UCSD</b></h2>
             <aside>
                 <details>
                     <summary>UCSD</summary>
@@ -42,7 +52,10 @@
             </aside>
             <h3><strong>2019 - 2023</strong></h3>
         </header>
-        <p>Play to hear what I sound like!</p>
+        
+        <hr>
+
+        <p id="HearText">Play to hear what I sound like!</p>
         
         <audio controls>
             <source src="Hi-Im-Nathan.m4a" type="audio/mpeg">
@@ -63,7 +76,7 @@
         <hr>
         
         <section id="skills">
-           <h2>
+           <h2 class ="headertwo">
                Programming Skills
            </h2>
            <a href="https://github.com/nathanbui90/UserSiteHTML">Link to UserSiteHTML repo!</a> 
@@ -85,7 +98,7 @@
         <hr>
 
         <section id="internship">
-            <h2><b>Northrop Grumman Internship</b></h2>
+            <h2 class ="headertwo"><b>Northrop Grumman Internship</b></h2>
             <table>
                 <caption><b>Experiences</b></caption>
                 <colgroup>
@@ -114,7 +127,7 @@
         <hr>
         
         <section id="aboutme">
-            <h2>About Me</h2>
+            <h2 class ="headertwo">About Me</h2>
             <p>I'm currently a sophmore at UCSD. I'm currently enrolled in CSE 110, CSE 140, CSE 140L, and Math 20D.</p>
             
             <h3>Hobbies</h3>
@@ -124,8 +137,8 @@
                 <li>Weightlifting</li>
             </ol>
             <figure>
-                <img src="Rock_Climbing.jpg" alt="Rock_Climbing" width="200" height="300">
-                <figcaption><i>Myself climbing at Factory Bouldering</i></figcaption>
+                <img id="imageRock" src="Rock_Climbing.jpg" alt="Rock_Climbing" width="300" height="300">
+                <figcaptione id="figCap"><i>Myself climbing at Factory Bouldering</i></figcaption>
             </figure>
         </section>
         
@@ -140,12 +153,12 @@
         
         <hr>
         
-        <video width="320" height="240" controls>
+        <video id="video" width="320" height="240" controls>
             <source src="video.mp4" type="video/mp4"> 
         </video> <br>
         <canvas id = "myCanvas" width="1050" height="10"></canvas>
         <svg width="1100" height="10">
-            <rect width="1050" height="10"></rect>
+            <rect width="1050" height="10" style="fill:grey;"></rect>
         </svg>
 
         <hr>
@@ -153,36 +166,58 @@
         <form>
             <fieldset>
                 <legend>Message/Question Form</legend>
-                <label for="firstname">First Name:</label>
-                <input type="text" id="firstname" name="firstname"><br>
-                <label for="lastname">Last Name:</label>
-                <input type="text" id="lastname" name="lastname"><br>
-                <label for="ages">Enter Age:</label>
-                <input type="number" id="ages" name="ages"><br>
-                <label for="dates">Enter Date:</label>
-                <input type="date" id="dates" name="dates"><br>
-                <label for="times">Enter Time:</label>
-                <input type="time" id="times" name="times"><br>
-                <label for="typeof">Choose question or message:</label>
-                <select name="typeof" id="typeof">
-                <optgroup label="Question/Message">
-                    <option value ="Personal">Message</option>
-                    <option value="business">Question</option>
-                </optgroup>
-                </select><br>
-                <label for="Personal/Business1">Is your message/question:</label>
-                <input list="Personal/Business" name="Personal/Business1" id="Personal/Business1">
-                <datalist id="Personal/Business">
-                    <option value="Personal">
-                    <option value="Business">
-                </datalist><br>
-                <label for="fname">Email:</label>
-                <input type="email" id="fname" name="fname"><br>
-                <label for="telephone">Enter Telephone Number:</label>
-                <input type="tel" id="telephone" name="telephone"><br>
-                <label for="message-question">Message/Question:</label> <br>
-                <textarea id="message-question" name="message-question" rows="4" cols="50">Put your message or question here.
-                </textarea><br>
+                <div class="InputContainer">
+                    <div class="inputItem">
+                        <label for="firstname">First Name:</label>
+                        <input type="text" id="firstname" name="firstname"><br>
+                    </div>
+                    <div class="inputItem">
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" name="lastname"><br>
+                    </div>
+                    <div class="inputItem">
+                        <label for="ages">Enter Age:</label>
+                        <input type="number" id="ages" name="ages"><br>
+                    </div>
+                    <div class="inputItem">
+                        <label for="dates">Enter Date:</label>
+                        <input type="date" id="dates" name="dates"><br>
+                    </div>
+                    <div class="inputItem">
+                        <label for="times">Enter Time:</label>
+                        <input type="time" id="times" name="times"><br>
+                    </div>
+                    <div class="inputItem">
+                        <label for="typeof">Choose question or message:</label>
+                        <select name="typeof" id="typeof">
+                        <optgroup label="Question/Message">
+                            <option value ="Personal">Message</option>
+                            <option value="business">Question</option>
+                        </optgroup>
+                        </select><br>
+                    </div>
+                    <div class="inputItem">
+                        <label for="Personal/Business1">Is your message/question:</label>
+                        <input list="Personal/Business" name="Personal/Business1" id="Personal/Business1">
+                        <datalist id="Personal/Business">
+                            <option value="Personal">
+                            <option value="Business">
+                        </datalist><br>
+                    </div>
+                    <div class="inputItem">
+                        <label for="fname">Email:</label>
+                        <input type="email" id="fname" name="fname"><br>
+                    </div>
+                    <div class="inputItem">
+                        <label for="telephone">Enter Telephone Number:</label>
+                        <input type="tel" id="telephone" name="telephone"><br>
+                    </div>
+                    <div>
+                        <label for="message-question">Message/Question:</label> <br>
+                        <textarea id="message-question" name="message-question" rows="4" cols="50">Put your message or question here.
+                        </textarea><br>
+                    </div>
+                </div>
                 <button type="button">Send</button>
                 <input type="reset">
             </fieldset>
@@ -191,7 +226,7 @@
             <h2>Secret Message</h2>
         </template>
     </main>
-    <footer>
+    <footer id="footer">
         <i>Creator: Nathan Bui</i>
     </footer>
 </body>

@@ -1,0 +1,92 @@
+/* Positioning */
+#NavBar {
+    position: sticky;
+    top: 0;
+    background-color: rgb(209, 206, 206);
+    max-width: 3000px;
+    min-width: 300pt;
+    border: 1px solid black;
+
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 5pc;
+    height: 2.5pc;
+    border: 3px solid #141313
+    
+}
+
+h2.headertwo{
+    text-align: center;
+}
+
+#video {
+    margin:auto;
+    display: block;
+}
+
+#imageRock {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 300px;
+}
+
+#figCap {
+    display: block;
+    margin: 1px 10px 10px 120px;
+}
+
+#myself {
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+}
+
+#HearText {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.navBarFlex {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(207, 202, 202);
+    flex-shrink: 2;
+    flex-basis: auto;
+}
+
+.navBarFlex > a {
+    background-color: rgb(243, 243, 243);
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.InputContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color:rgb(126, 122, 122);
+    padding: 10px;
+}
+
+.InputContainer > div {
+    background-color: #fafafa;
+    border: 1px solid rgb(77, 75, 75);
+    padding: 20px;
+    text-align: center;
+}
+
+#major {
+    padding: 10px 10px 10px 10px;
+}
+
+#searchbar-bright {
+    padding-top: 10px;
+}
