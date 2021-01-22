@@ -1,9 +1,9 @@
 ---
 name: CSS Text
 about: issue related to text
-title: ''
+title: 'Text: <Insert Edit>'
 labels: text
-assignees: ''
+assignees: nathanbui90
 
 ---
 
