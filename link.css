@@ -57,7 +57,7 @@ h2.headertwo{
     padding-bottom: 10px;
     padding-right: 10px;
 }
-
+/* Design*/
 .navBarFlex {
     display: flex;
     flex-wrap: nowrap;
@@ -132,7 +132,7 @@ nav a:active {
         background-color: rgb(132, 132, 240);
     }
 }
-
+/*Text*/
 *{
     font-family: 'Fraunces', serif;
 }
