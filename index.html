@@ -10,6 +10,12 @@
             margin: auto;
             text-align: center;
             display: block;
+            border: 1em;
+            border-color: black;
+            border-style: solid;
+            border-width: 50pxpx;
+            border-radius: 100px;
+            background-color: white;
         }
     </style>
     <title>Nathan's User Site</title>
@@ -21,7 +27,7 @@
             <a href="#quote">Quote</a>
             <a href="#skills">Programming Skills</a>
             <a href="#internship">NG Internship</a>
-            <a href="aboutme">About Me</a>
+            <a href="#aboutme">About Me</a>
         </nav>
     </div>
     <main>
@@ -55,7 +61,7 @@
         
         <hr>
 
-        <p id="HearText">Play to hear what I sound like!</p>
+        <p id="HearText"><strong>Play to hear what I sound like!</strong></p>
         
         <audio controls>
             <source src="Hi-Im-Nathan.m4a" type="audio/mpeg">
@@ -162,10 +168,10 @@
         </svg>
 
         <hr>
-        <p>Ask me a question or just send a message!</p>
+        <p><strong>Ask me a question or just send a message!</strong></p>
         <form>
             <fieldset>
-                <legend>Message/Question Form</legend>
+                <legend><strong>Message/Question Form</strong></legend>
                 <div class="InputContainer">
                     <div class="inputItem">
                         <label for="firstname">First Name:</label>
@@ -218,8 +224,10 @@
                         </textarea><br>
                     </div>
                 </div>
-                <button type="button">Send</button>
-                <input type="reset">
+                <div id="buttons">
+                    <button type="button">Send</button>
+                    <input type="reset">
+                </div>
             </fieldset>
         </form>
         <template>

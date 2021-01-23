@@ -21,6 +21,9 @@
 
 h2.headertwo{
     text-align: center;
+    border: 5px solid gray;
+    border-radius: 100px;
+    background-color: white;
 }
 
 #video {
@@ -44,6 +47,7 @@ h2.headertwo{
     display: block;
     margin: auto;
     padding-top: 50px;
+    padding-bottom: 5vmax;
 }
 
 #HearText {
@@ -89,4 +93,41 @@ h2.headertwo{
 
 #searchbar-bright {
     padding-top: 10px;
+}
+
+* {
+    background-color:hsl(192, 11%, 88%);
+}
+
+table, th, td {
+    border: 2px solid hsla(346, 57%, 0%, 0.9);
+    border-collapse: collapse;
+}
+
+button[type="button"]{
+    background-color: white;
+}
+
+button[type="button"]:hover {
+    background-color: black;
+    color:white;
+}
+
+input[type="reset"]{
+    background-color: white;
+}
+
+input[type="reset"]:hover {
+    background-color: black;
+    color:white;
+}
+
+.navBarFlex > a:active {
+    color:red;
+} 
+
+@media screen and (max-width:1000px) {
+    *{
+        background-color: rgb(132, 132, 240);
+    }
 }
