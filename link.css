@@ -9,7 +9,7 @@
 
 }
 
-#footer {
+main+footer {
     position: fixed;
     bottom: 0;
     right: 0;
@@ -24,6 +24,7 @@ h2.headertwo{
     border: 5px solid gray;
     border-radius: 100px;
     background-color: white;
+    text-decoration: underline dotted;
 }
 
 #video {
@@ -95,7 +96,7 @@ h2.headertwo{
     padding-top: 10px;
 }
 
-* {
+body {
     background-color:hsl(192, 11%, 88%);
 }
 
@@ -122,7 +123,7 @@ input[type="reset"]:hover {
     color:white;
 }
 
-.navBarFlex > a:active {
+nav a:active {
     color:red;
 } 
 
@@ -130,4 +131,12 @@ input[type="reset"]:hover {
     *{
         background-color: rgb(132, 132, 240);
     }
+}
+
+*{
+    font-family: 'Fraunces', serif;
+}
+
+p ~ pre {
+    border: 2px solid black;
 }
